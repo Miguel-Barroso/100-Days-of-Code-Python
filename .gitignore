@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Environment variables
+.env
+
+# Databases
+*.sqlite3
+
+# Video files
+*.mov
+*.mp4
+
+# Compressed files
+*.7zip
+*.zip
+*.rar
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Miscellaneous
+Miscellaneous/
+
+# Claude
+.claude/
+
+# Cached API tokens
+access_token
+
+# Build artifacts (PyInstaller, etc.)
+build/
+dist/
+*.spec
+*.app/
+
+# Selenium browser profiles (contain session cookies / credentials)
+chrome_profile/
+
+# Password manager local data
+data.text

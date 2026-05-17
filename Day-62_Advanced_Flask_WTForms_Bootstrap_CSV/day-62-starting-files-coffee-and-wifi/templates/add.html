@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+<!--Don't forget your import here-->
+{% from 'bootstrap5/form.html' import render_form %}
+{% block title %}Add A New Cafe{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8">
+
+      <h1>Add a new cafe into the database</h1>
+
+      <!-- This is where your WTForm will go -->
+        {{ render_form(form, novalidate=True) }}
+
+<!--      <form method="POST" action="">-->
+<!--          {{ form.csrf_token }}-->
+<!--          <div> {{ form.cafe.label }} </div>-->
+<!--          <div> {{ form.cafe(size=20) }} </div>-->
+<!--          <br>-->
+<!--          <div> {{ form.location.label }} </div>-->
+<!--          <div> {{ form.location(size=20) }} </div>-->
+<!--          <br>-->
+<!--          <div> {{ form.opening.label }} </div>-->
+<!--          <div> {{ form.opening(size=20) }} </div>-->
+<!--          <br>-->
+<!--          <div> {{ form.closing.label }} </div>-->
+<!--          <div> {{ form.closing(size=20) }} </div>-->
+<!--          <br>-->
+<!--          <div> {{ form.coffee.label }} </div>-->
+<!--          <div> {{ form.coffee }} </div>-->
+<!--          <br>-->
+<!--          <div> {{ form.wifi.label }} </div>-->
+<!--          <div> {{ form.wifi }} </div>-->
+<!--          <br>-->
+<!--          <div> {{ form.power.label }} </div>-->
+<!--          <div> {{ form.power }} </div>-->
+<!--          <br>-->
+<!--          <div> {{ form.submit.label }} </div>-->
+<!--          <div> {{ form.submit }} </div>-->
+<!--      </form>-->
+
+	  <p class="space-above"><a href="{{ url_for('cafes') }}">See all cafes</a></p>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

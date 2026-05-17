@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% from 'bootstrap5/form.html' import render_form %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<body>
+    <div class="container">
+    <h1>Login</h1>
+    {{ render_form(form, novalidate=True) }}
+    <!-- This is where our form will go. -->
+    <!-- The form code uses a dynamic URL along with disabling browser inbuilt validation -->
+    <!-- the novalidate flag prevents HTML5's built in data validation to show and only use WTForm's -->
+<!--    <form method="POST" action="{{ url_for('login') }}" novalidate>-->
+<!--        {{ form.csrf_token }}-->
+<!--        <p>-->
+<!--        {{ form.email.label }} <br> {{ form.email(size=30) }}-->
+<!--            {% for error in form.email.errors %}-->
+<!--            <soan style="color:red">{{ error }}</soan>-->
+<!--            {% endfor %}-->
+<!--        </p>-->
+<!--        <p>-->
+<!--        {{ form.password.label }} <br> {{ form.password }}-->
+<!--            {% for error in form.password.errors %}-->
+<!--            <span style="color:red">{{ error }}</span>-->
+<!--            {% endfor %}-->
+<!--        </p>-->
+<!--        {{ form.submit }}-->
+<!--    </form>-->
+    </div>
+</body>
+{% endblock %}
