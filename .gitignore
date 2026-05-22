@@ -47,8 +47,16 @@ Miscellaneous/
 # Claude
 .claude/
 
-# Cached API tokens
+# Cached API tokens (spotipy writes OAuth tokens to a .cache file by default)
 access_token
+.cache
+*.cache
+
+# Console/script output captures that may include callback URLs with auth codes
+spotify_user.txt
+
+# Databases
+*.sqlite
 
 # Build artifacts (PyInstaller, etc.)
 build/
